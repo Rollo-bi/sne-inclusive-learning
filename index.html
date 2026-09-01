@@ -954,12 +954,20 @@
 
                         <div class="video-wrapper">
                             <!-- Replace modelling-numerals.mp4 with the actual video later -->
-                            <video id="modellingVideo" controls preload="metadata" poster="images/modelling-poster.jpg">
+                            <video
+    controls
+    playsinline
+    preload="metadata"
+    width="100%"
+    style="width:100%; border-radius:16px; background:#000;"
+  >
+    <source src="/assets/video-01.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-                                <source src="assets/video-01.mp4" type="video/mp4">
-
-                                Your browser does not support the video element.
-                            </video>
+  <p class="video-caption">
+    Foundation Level – Modelling numerals 1–5.
+  </p>
 
                             <!-- Video placeholder shown until a video is provided -->
 
@@ -1199,7 +1207,7 @@
 
                             <div class="video-wrapper">
 
-                                <video controls preload="metadata" poster="assets/video-03-thumb.jpg">
+                               <video controls preload="metadata" playsinline>
                                     <source src="assets/videooth.mp4" type="video/mp4">
 
                                     Your browser does not support video playback.
